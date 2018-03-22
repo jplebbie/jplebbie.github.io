@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<title>JP LEBBIE PHOTOGRAPHY</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    .border {
+        border: 2px solid #4e5965;
+    }
+    
+    .title {
+        color: #708090;
+
+        
+    }
+    
+    .h1text {
+        letter-spacing: 6px;
+        font-size: 80px;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 300;
+    }
+    
+    .text {
+        font-family: 'Work Sans', sans-serif;
+    }
+    
+    .display {
+        position:absolute;
+        top:43%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        -ms-transform:translate(-50%,-50%);
+    }
+    
+    .bar {
+        background-color: #c5ccd3;
+    }
+    
+    .navStyle {
+        color: #2c333a;
+    }
+    
+    .top {
+        position: absolute;
+        top: 0;
+    }
+    
+    
+    .content{
+        margin: auto;
+    }
+    
+    html, body {
+        height: 100%;
+    }
+    
+    body { 
+			background-image: url("https://popikin.files.wordpress.com/2018/01/dsc_0312.png");
+			background-position: center center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+			background-color:
+  
+}
+
+</style>
+<body>
+<!-- Header -->
+<header class="w3-display-container w3-center">
+
+  <div class="display w3-padding-large border w3-wide w3-center title">
+    <h1 class="w3-hide-medium w3-hide-small h1text">J.P LEBBIE</h1>
+    <h5 class="w3-hide-large text" style="white-space:nowrap">J.P LEBBIE</h5>
+    <h3 class="w3-hide-medium w3-hide-small">PHOTOGRAPHY</h3>
+  </div>
+ 
+</header>
+
+<div class="top">
+  <div class="w3-bar navStyle" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="/" class="w3-bar-item w3-button">HOME</a>
+    <a href="https://blkid83.tumblr.com/about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="https://blkid83.tumblr.com/portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="https://blkid83.tumblr.com/contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="https://blkid83.tumblr.com/about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="https://blkid83.tumblr.com/portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="https://blkid83.tumblr.com/contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
+</body>
+</html>
